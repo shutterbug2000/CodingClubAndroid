@@ -3,12 +3,13 @@ package com.shutterbug.clubport;
 import com.badlogic.gdx.*;
 import com.badlogic.gdx.graphics.*;
 import com.badlogic.gdx.graphics.g2d.*;
+import engine_v01.assets.*;
 
 public class MyGdxGame implements ApplicationListener
 {
 	Texture texture;
 	SpriteBatch batch;
-
+	GameObject game = new GameObject(1000,700);
 	@Override
 	public void create()
 	{
@@ -19,12 +20,12 @@ public class MyGdxGame implements ApplicationListener
 	@Override
 	public void render()
 	{        
-	    Gdx.gl.glClearColor(1, 1, 1, 1);
-	    Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
-		batch.begin();
-		batch.draw(texture, Gdx.graphics.getWidth() / 4, 0, 
-				   Gdx.graphics.getWidth() / 2, Gdx.graphics.getWidth() / 2);
-		batch.end();
+	    //Gdx.gl.glClearColor(1, 1, 1, 1);
+	    //Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
+		//batch.begin();
+		//batch.draw(texture, Gdx.graphics.getWidth() / 4, 0, 
+		//		   Gdx.graphics.getWidth() / 2, Gdx.graphics.getWidth() / 2);
+		//batch.end();
 	}
 
 	@Override
